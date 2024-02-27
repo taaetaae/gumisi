@@ -1,0 +1,1621 @@
+@import url(../css/reset.css);
+
+/* mainfont - suit.ttf*/
+
+@font-face {
+    font-family: suit_tBold;
+    src: url(../font/SUIT-ttf/SUIT-Bold.ttf);
+}
+
+@font-face {
+    font-family: suit_texbold;
+    src: url(../font/SUIT-ttf/SUIT-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: suit_texlight;
+    src: url(../font/SUIT-ttf/SUIT-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: suit_theavy;
+    src: url(../font/SUIT-ttf/SUIT-Heavy.ttf);
+}
+
+@font-face {
+    font-family: suit_tligt;
+    src: url(../font/SUIT-ttf/SUIT-Light.ttf);
+}
+
+@font-face {
+    font-family: suit_tmedium;
+    src: url(../font/SUIT-ttf/SUIT-Medium.ttf);
+}
+
+@font-face {
+    font-family: suit_tregular;
+    src: url(../font/SUIT-ttf/SUIT-Regular.ttf);
+}
+
+@font-face {
+    font-family: suit_tsemibold;
+    src: url(../font/SUIT-ttf/SUIT-SemiBold.ttf)
+}
+
+@font-face {
+    font-family: suit_tthin;
+    src: url(../font/SUIT-ttf/SUIT-Thin.ttf);
+}
+
+/* mainfont - suit.otf*/
+
+@font-face {
+    font-family: suit_oBold;
+    src: url(../font/SUIT-otf/SUIT-Bold.otf);
+}
+
+@font-face {
+    font-family: suit_oexbold;
+    src: url(../font/SUIT-otf/SUIT-ExtraBold.otf);
+}
+
+@font-face {
+    font-family: suit_oexlight;
+    src: url(../font/SUIT-otf/SUIT-ExtraLight.otf);
+}
+
+@font-face {
+    font-family: suit_oheavy;
+    src: url(../font/SUIT-otf/SUIT-Heavy.otf);
+}
+
+@font-face {
+    font-family: suit_oligt;
+    src: url(../font/SUIT-otf/SUIT-Light.otf);
+}
+
+@font-face {
+    font-family: suit_omedium;
+    src: url(../font/SUIT-otf/SUIT-Medium.otf);
+}
+
+@font-face {
+    font-family: suit_oregular;
+    src: url(../font/SUIT-otf/SUIT-Regular.otf);
+}
+
+@font-face {
+    font-family: suit_osemibold;
+    src: url(../font/SUIT-otf/SUIT-SemiBold.otf)
+}
+
+@font-face {
+    font-family: suit_othin;
+    src: url(../font/SUIT-otf/SUIT-Thin.otf);
+}
+
+
+.t_hidden {
+    display: block;
+    width: 1px;
+    height: 1px;
+    font-size: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+body {
+    font-family: suit_tmedium, suit_omedium;
+    font-size: 1rem;
+}
+
+main {
+    width: 100%;
+    max-width: 1920px;
+}
+
+figure {
+    width: fit-content;
+    height: fit-content;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    padding: 0 50px;
+    background-color: #ffffff34;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+header .h_inner {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .h_inner .logo {
+    width: 200px;
+}
+
+header .h_inner .h_menu {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .h_inner .h_menu li {
+    font-size: 1.25rem;
+    font-family: suit_texbold;
+    text-align: center;
+    color: #000;
+    position: relative;
+    z-index: 88;
+}
+
+header .h_inner .h_menu li:hover {
+    color: #0065b3;
+    font-family: suit_theavy;
+}
+
+header .h_inner .h_menu li a {
+    display: block;
+}
+
+header .h_inner .h_menu li>.h_dmenu {
+    width: 250%;
+    color: #000;
+    text-align: center;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+header .h_inner .h_menu li .h_dmenu li {
+    width: 100%;
+    line-height: 40px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+header .h_inner .h_menu li .h_dmenu li a {
+    display: block;
+}
+
+header .h_inner .h_menu li .h_dmenu li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+header .search {
+    width: 25%;
+    background: none;
+    border: 3px solid #0066B3;
+    padding: 0 10px;
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    right: 120px;
+    transform: translateY(-50%);
+    display: none;
+}
+
+header .search input {
+    width: 70%;
+    font-family: suit_texbold;
+    font-size: 1.1rem;
+    padding: 10px;
+    border: none;
+    background: none;
+}
+
+header .s_btn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 35%;
+    right: 120px;
+    display: none;
+}
+
+header .ham {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    display: none;
+}
+
+.m_search_hidden {
+    position: absolute;
+    /* 스크립트에서 변경해야하는 부분 
+    top: -100px -> top:100px
+    */
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 50px;
+    border: 2px solid #0065b3;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 40px;
+    z-index: 99;
+    /* 돋보기 아이콘 클릭했을 때 - 나타나는 창  */
+}
+
+.m_search_hidden>input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+.m_search_hidden>a {
+    cursor: pointer;
+}
+
+.m_submenu_hidden {
+    /* hambar 누르면 나타나는 서브메뉴창 */
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    /* 스크립트에서 변경해주기 
+    right: 300%; -> right:0 */
+    right: 300%;
+    z-index: 9999;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    font-family: suit_texbold;
+}
+
+.m_submenu_hidden .sub_mtop {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.m_submenu_hidden .sub_mtop .lang {
+    display: flex;
+    align-items: center;
+}
+
+.m_submenu_hidden .sub_mtop .lang li {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.m_submenu_hidden .sub_mtop .lang .langlist_drop {
+    display: none;
+}
+
+.m_submenu_hidden .sub_mtop .right_icons {
+    display: flex;
+}
+
+.m_submenu_hidden .sub_mtop .right_icons button {
+    background-color: transparent;
+    border: none;
+}
+
+.m_submenu_hidden .mb_search_hidden {
+    width: 85%;
+    height: 80px;
+    border: 2px solid #0065b3;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 50px;
+}
+
+.m_submenu_hidden .mb_search_hidden>input {
+    width: 80%;
+    height: 100px;
+    border: none;
+    background-color: transparent;
+    padding: 0 50px;
+}
+
+
+.m_submenu_hidden .big_menu {
+    width: 100%;
+    height: 50%;
+    border-top: 2px solid #0065b3;
+    border-bottom: 2px solid #0065b3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 100px;
+}
+
+.m_submenu_hidden .big_menu li {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    border-bottom: 1px dotted #808080;
+    text-align: center;
+}
+
+.m_submenu_hidden .big_menu li:nth-child(5) {
+    border-bottom: none;
+}
+
+.m_submenu_hidden .big_menu li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.m_submenu_hidden .big_menu li a button {
+    display: block;
+    background: none;
+    border: none;
+}
+
+.banner {
+    width: 100%;
+    height: 950px;
+    overflow: hidden;
+}
+
+.banner .vbox video {
+    width: fit-content;
+}
+
+.blue {
+    color: #0066B3;
+    font-family: suit_tbold, suit_obold;
+}
+
+.sec1 {
+    margin-bottom: 8%;
+    padding: 0 20px;
+}
+
+.sec1 .sec1_map {
+    margin-top: 15%;
+}
+
+.sec1 .sec1_map .sec1_mapT .sec1_ititle {
+    font-family: suit_theavy;
+    margin-bottom: 15%;
+    line-height: 250%;
+    font-size: 1.5rem;
+}
+
+.sec1 .sec1_map .sec1_mapT .sec1_ititle p {
+    font-family: suit_texbold;
+    font-size: 1.3rem;
+}
+
+.sec1 .sec1_map .sec1_mapT .mainT {
+    font-size: 1rem;
+    line-height: 180%;
+}
+
+.sec1 .gumisi {
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sec1 .gumisi .tab {
+    width: 100%;
+    background-color: #0066B3;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 5%;
+    color: #fff;
+    font-size: 1.3rem;
+    font-family: suit_tbold;
+}
+
+.sec1 .gumisi .sec1_ibox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.sec1 .gumisi .tomibox {
+    margin-top: 60px;
+}
+
+.sec1 .gumisi .sec1_ibox .textbox p {
+    font-size: 1rem;
+    font-family: suit_tsemibold;
+}
+
+.sec1 .gumisi .sec1_ibox .textbox .hidden_p {
+    font-size: 0.97rem;
+    display: none;
+}
+
+.sec1 .gumisi .sec1_ibox .textbox .colortitle {
+    width: fit-content;
+    font-family: suit_texbold;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 20px;
+    background-color: #FFC700;
+    color: #fff;
+}
+
+.sec1 .gumisi .sec1_ibox .textbox .tree {
+    background-color: #488100;
+}
+
+.sec1 .gumisi .sec1_ibox .textbox .bird {
+    background-color: #555;
+    color: #fff;
+}
+
+.sec1 .gumisi .sec1_ibox .textbox .tomi {
+    background-color: #0066B3;
+    color: #fff;
+}
+
+.sec1 .gumisi .sec1_ibox .textbox .tomit {
+    line-height: 180%;
+}
+
+.sec2 {
+    margin-bottom: 15%;
+}
+
+.sec2 .qmenu {
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    padding: 30px;
+}
+
+.sec2 .qmenu .sec2_title {
+    font-size: 1.5rem;
+    font-family: suit_theavy;
+}
+
+.sec2 .sec2_box {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sec2 .sec2_box .sec2_ibox {
+    width: 50%;
+    height: 200px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.sec2 .sec2_box .sec2_ibox .icon {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-size: 1.2rem;
+    font-family: suit_tbold;
+    cursor: pointer;
+}
+
+.sec2 .sec2_box .sec2_ibox .h_drop {
+    width: 50%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0066B3;
+    color: #fff;
+    position: absolute;
+    top: 70px;
+    left: 70%;
+    border-radius: 30px;
+    padding: 30px 0;
+    text-align: center;
+    z-index: 978;
+    font-size: 1.1rem;
+    font-family: suit_tsemibold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.sec2 .sec2_box .sec2_ibox .movemenu {
+    width: 50%;
+    color: #fff;
+    background-color: #0065b3;
+    position: absolute;
+    top: 130px;
+    left: 70%;
+    border-radius: 30px;
+    overflow: hidden;
+    z-index: 99;
+    display: none;
+}
+
+.sec2 .sec2_box .sec2_ibox .movemenu ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec2 .sec2_box .sec2_ibox .movemenu ul li {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+}
+
+.sec2 .sec2_box .sec2_ibox .movemenu ul li a {
+    display: block;
+}
+
+.sec2 .appback {
+    width: 100%;
+    background-color: #64C0AB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec2 .appback .app {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.sec2 .appback .app .appT {
+    text-align: center;
+    padding: 0 1%;
+}
+
+.sec2 .appback .app .appT .apptitle {
+    font-size: 1.5em;
+    line-height: 200%;
+    text-align: center;
+    font-family: suit_tbold;
+    color: #fff;
+}
+
+.sec2 .appback .app .appT .apptitle>.blue {
+    font-family: suit_theavy;
+    font-size: 1.7rem;
+}
+
+.sec2 .appback .app .appT .appbtn {
+    padding: 20px 80px;
+    font-family: suit_tbold;
+    margin-top: 50px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.3rem;
+    transition: 0.4s;
+    font-weight: 700;
+}
+
+.sec2 .appback .app .appT>.appbtn:hover {
+    box-shadow: 0px 0px 15px 15px #ffffff45;
+    font-family: suit_texbold;
+}
+
+.sec2 .appback .app .appT .appbtn>.blue {
+    font-family: suit_theavy;
+}
+
+.sec3 {
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.sec3 .sec3_title {
+    font-size: 1.6rem;
+    font-family: suit_theavy;
+    max-width: 1140px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sec3 .sec3_title .s_menu {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    font-family: suit_tbold;
+    font-size: 1.2rem;
+    margin-top: 80px;
+}
+
+.sec3 .sec3_title .s_menu li:hover {
+    color: #0066B3;
+    font-family: suit_texbold;
+}
+
+.sec3 .slidebg {
+    width: 100%;
+    height: 770px;
+    background-color: #0065b338;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 5%;
+}
+
+.sec3 .slidebg .slide {
+    width: 2516px;
+    height: 770px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec3 .slidebg .slide .sbox {
+    width: 629px;
+    height: 593px;
+    margin: 0 80px;
+}
+
+.sec3 .slidebg .slide .sbox figure {
+    width: 629px;
+    height: 444px;
+}
+
+.sec3 .slidebg .slide .sbox .stext {
+    background-color: #0066B3;
+    text-align: center;
+    padding: 30px 0;
+    color: #fff;
+    line-height: 250%;
+}
+
+.sec3 .slidebg .slide .sbox .stext span {
+    font-size: 1.2rem;
+}
+
+.sec3 .slidebg .slide .sbox .stext p {
+    font-size: 1rem;
+}
+
+.sec4 {
+    margin-bottom: 10%;
+}
+
+.sec4 .sec4_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: suit_texbold;
+    font-size: 1.5rem;
+    margin-bottom: 8%;
+}
+
+.sec4 .sec4_title p>.blue {
+    font-family: suit_texbold;
+}
+
+.sec4 .sec4_title .btitle {
+    display: flex;
+    align-items: center;
+    border: none;
+    box-shadow: 3px 4px 4px #ccc;
+    border-radius: 40px;
+    padding: 10px 20px;
+    margin-right: 30px;
+}
+
+.sec4 .sec4_title .btitle figure {
+    width: 50px;
+    height: 50px;
+}
+
+.sec4 .sec4_title .btitle span {
+    color: #FF8A00;
+}
+
+.sec4 .sec4_title p {
+    font-family: suit_texbold;
+    font-size: 1.5rem;
+}
+
+.sec4 .sec4_box .sec4_ititle,
+.sec4 .sec4_box .sec4_ititle_youtube {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 5% 0;
+    font-family: suit_texbold;
+    font-size: 1.3rem;
+    gap: 10px;
+}
+
+.sec4 .sec4_box .sec4_ititle h4 {
+    margin-top: 5px;
+}
+
+.sec4 .sec4_box .sec4_ititle:not(:nth-child(1)) {
+    padding: 0 20px;
+}
+
+.sec4 .youlist p {
+    text-align: center;
+    padding: 20px 0;
+    line-height: 180%;
+    font-family: suit_tbold;
+}
+
+.sec4 .lists p {
+    text-align: center;
+    padding: 20px 0;
+    line-height: 200%;
+    font-family: suit_tsemibold, suit_osemibold;
+}
+
+.sec4 .sec4_box .hidden_span {
+    text-align: center;
+    font-family: suit_tsemibold;
+    padding: 20px 0;
+    font-size: 1rem;
+    display: none;
+}
+
+.sec5 {
+    margin-bottom: 10%;
+}
+
+.sec5 h2 {
+    font-size: 1.5rem;
+    font-family: suit_theavy;
+}
+
+.sec5 .snslist {
+    text-align: center;
+    margin: auto;
+}
+
+.sec5 .snslist .snsicon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+    padding: 0 30px;
+}
+
+.sec5 .snslist .snsicon figure {
+    width: 80px;
+}
+
+.sec5 .snslist p {
+    font-family: suit_tsemibold;
+    font-size: 0.9rem;
+    padding: 0 50px;
+    padding: 0 50px;
+    color: #808080;
+    margin-top: 50px;
+}
+
+.sec6 {
+    margin-bottom: 13%;
+}
+
+.sec6 h2 {
+    font-size: 1.5rem;
+    font-family: suit_theavy;
+}
+
+.sec6 .notice {
+    width: 100%;
+    margin-top: 50px;
+    border-top: 2px solid #0066B3;
+    border-bottom: 2px solid #0066B3;
+}
+
+.sec6 .notice .n_title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    text-align: center;
+    font-family: suit_texbold;
+    color: #333;
+}
+
+.sec6 .notice .n_title li:nth-child(1) {
+    width: 20%;
+}
+
+.sec6 .notice .n_title li:nth-child(2) {
+    width: 40%;
+}
+
+.sec6 .notice .n_title li:nth-child(3) {
+    width: 20%;
+}
+
+.sec6 .notice .n_title li:nth-child(4) {
+    width: 20%;
+}
+
+.sec6 .notice .n_text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    border-top: 1px dotted #999;
+    text-align: center;
+    font-family: suit_tsemibold;
+    color: #333;
+}
+
+.sec6 .notice .n_text li:nth-child(1) {
+    width: 20%;
+}
+
+.sec6 .notice .n_text li:nth-child(2) {
+    width: 40%;
+    text-align: left;
+}
+
+.sec6 .notice .n_text li:nth-child(3) {
+    width: 20%;
+}
+
+.sec6 .notice .n_text li:nth-child(4) {
+    width: 20%;
+}
+
+.sec6 .number {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 0.9rem;
+    font-family: suit_tbold;
+    margin: 50px auto;
+}
+
+.sec6 .sec6_search {
+    width: 60%;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border: 1px solid #0000001e;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.sec6 .sec6_search .sec6_tt {
+    width: 15%;
+    font-family: suit_tbold;
+    font-size: 1rem;
+}
+
+.sec6 .sec6_search .sec6_tt li {
+    width: 100%;
+    position: relative;
+}
+
+.sec6 .sec6_search .sec6_tt li .sec6_ht {
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    text-align: center;
+    display: none;
+    transition: 0.2s;
+}
+
+.sec6 .sec6_search .down {
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border: none;
+    cursor: pointer;
+}
+
+.sec6 .sec6_search input {
+    border: none;
+}
+
+.sec6 .sec6_search input a {
+    font-family: suit_texbold;
+    font-size: 1rem;
+}
+
+/* 제목부분 누르면 전환되게 스크립트 */
+
+.sec6 .hidden_noticess {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin-bottom: 50px;
+    display: none;
+}
+
+.sec6 .hidden_noticess .m_hidden_notice,
+.sec6 .hidden_noticess .m_hidden_notice2 {
+    width: 100%;
+    padding: 20px 0;
+    margin-bottom: 5%;
+    position: absolute;
+}
+
+.sec6 .hidden_noticess .m_hidden_notice .h_noticet,
+.sec6 .hidden_noticess .m_hidden_notice2 .h_noticet {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: suit_tbold;
+    font-size: 1.1rem;
+}
+
+.sec6 .hidden_noticess .m_hidden_notice .h_noticet .noticet,
+.sec6 .hidden_noticess .m_hidden_notice2 .h_noticet .noticet {
+    width: fit-content;
+    height: 50px;
+    line-height: 50px;
+    background-color: #0065b3;
+    border-right: 1px solid #fff;
+    color: #fff;
+    margin-right: 1px;
+    padding: 0 20px;
+}
+
+.sec6 .hidden_noticess .m_hidden_notice .h_notice,
+.sec6 .hidden_noticess .m_hidden_notice2 .h_notice {
+    width: 100%;
+    text-align: center;
+    border-top: 2px solid #0065b3;
+    border-bottom: 2px solid #0065b3;
+    position: absolute;
+    top: 70px;
+}
+
+.sec6 .hidden_noticess .m_hidden_notice2 .h_notice {
+    display: none;
+}
+
+.sec6 .hidden_noticess .m_hidden_notice .h_notice li,
+.sec6 .hidden_noticess .m_hidden_notice2 .h_notice li {
+    padding: 20px 0;
+    font-size: 1rem;
+}
+
+.sec6 .hidden_noticess .m_hidden_notice .h_notice li a,
+.sec6 .hidden_noticess .m_hidden_notice2 .h_notice li a {
+    transition: 0.5s;
+}
+
+.sec6 .hidden_noticess .m_hidden_notice .h_notice li a:hover,
+.sec6 .hidden_noticess .m_hidden_notice2 .h_notice li a:hover {
+    color: #0065b3;
+    font-family: suit_tbold;
+    font-size: 1.05rem;
+}
+
+.sec6 .hidden_noticess .m_hidden_notice .h_notice li:nth-child(2),
+.sec6 .hidden_noticess .m_hidden_notice2 .h_notice li:nth-child(2) {
+    border-top: 1px dotted #0065b3;
+    border-bottom: 1px dotted #0065b3;
+}
+
+footer {
+    background-color: #0066B3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .f_inner {
+    color: #fff;
+    padding: 5% 0;
+}
+
+footer .f_inner .f_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8% 0;
+}
+
+footer .f_inner .f_main .f_logo figure {
+    margin: auto;
+}
+
+footer .f_inner .f_main .f_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .f_inner .f_main .f_text p {
+    font-size: 1rem;
+    line-height: 250%;
+    padding: 0 50px;
+}
+
+footer .f_inner .f_main .f_text p>br {
+    display: none;
+}
+
+footer .f_inner .f_list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: suit_tsemibold;
+    font-size: 1rem;
+    text-align: center;
+}
+
+footer .f_inner .f_list li:hover {
+    color: gold;
+    font-family: suit_theavy;
+}
+
+footer .f_inner .f_list li:not(:nth-child(1)) {
+    margin-left: 20px;
+}
+
+footer .f_site {
+    width: 100%;
+    margin: 5% 0;
+}
+
+footer .f_site .sitemap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 30px;
+    font-size: 1.1rem;
+    font-family: suit_tsemibold;
+    font-weight: 500;
+    background-color: #fff;
+    color: #0066B3;
+    text-align: center;
+}
+
+footer .f_site .sitemap li {
+    text-align: center;
+}
+
+footer .f_site .sitemap li:not(:nth-child(4)) {
+    margin-right: 150px;
+}
+
+.topbtn {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 100%;
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    background-color: #0065b3;
+}
+
+@media screen and (max-width:1200px) {
+
+    .sec1 .gumisi .sec1_ibox {
+        justify-content: space-between;
+    }
+
+    .sec2 .qmenu {
+        width: 90%;
+        justify-content: space-around;
+    }
+
+    .sec2 .sec2_box .sec2_ibox {
+        width: 50%;
+        margin-bottom: 40px;
+    }
+
+    .sec2 .sec2_box .sec2_ibox .icon {
+        font-size: 1.1rem;
+    }
+
+    .sec2 .sec2_box .sec2_ibox .h_drop {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .sec3 .sec3_title .s_menu {
+        margin: 5% auto;
+    }
+
+    footer .f_site .sitemap {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:991px) {
+    body {
+        font-size: 0.95rem;
+    }
+
+    header {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    header .h_inner {
+        width: 100%;
+    }
+
+    header .h_inner .logo img {
+        width: 90%;
+    }
+
+    header .h_inner .h_menu {
+        display: none;
+    }
+
+    header .hidden {
+        display: block;
+    }
+
+    header .s_btn {
+        display: block;
+    }
+
+    .sec1 .sec1_map .sec1_mapT .sec1_ititle {
+        margin-bottom: 15%;
+        line-height: 220%;
+        font-size: 1.35rem;
+    }
+
+    .sec1 .sec1_map .sec1_mapT .sec1_ititle p {
+        font-family: suit_tbold;
+        font-size: 1.2rem;
+    }
+
+    .sec1 .sec1_map .sec1_mapT .mainT {
+        font-size: 0.97rem;
+        line-height: 180%;
+    }
+
+    .sec1 .gumisi {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sec1 .gumisi .sec1_ibox {
+        width: 40%;
+        height: 50%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 30px;
+        text-align: center;
+        line-height: 180%;
+    }
+
+    .sec1 .gumisi .tree,
+    .sec1 .gumisi .tomibox {
+        flex-direction: column-reverse;
+    }
+
+    .sec1 .gumisi .sec1_ibox .colortitle {
+        margin: 20px auto;
+    }
+
+    .sec1 .gumisi .sec1_ibox .textbox {
+        text-align: left;
+    }
+
+    .sec1 .gumisi .sec1_ibox .imgbox {
+        margin-bottom: 3%;
+    }
+
+    .sec1 .gumisi .sec1_ibox .textbox .tomit {
+        line-height: 180%;
+    }
+
+
+    .sec1 .gumisi .sec1_ibox .textbox p {
+        display: none;
+    }
+
+    .sec1 .gumisi .sec1_ibox .textbox .hidden_p {
+        display: block;
+        line-height: 180%;
+    }
+
+    .sec2 .sec2_box {
+        width: 100%;
+        margin: auto;
+    }
+
+    .sec2 .qmenu .sec2_title {
+        width: 50%;
+        color: #0065b3;
+        font-family: suit_texbold;
+    }
+
+    .sec2 .sec2_box .sec2_ibox {
+        width: 50%;
+        position: relative;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    .sec2 .sec2_box .sec2_ibox .h_drop {
+        display: none;
+    }
+
+    .sec2 .appback .app {
+        padding: 10px 30px;
+    }
+
+    .sec2 .appback .app .appT .apptitle {
+        font-size: 1.3em;
+    }
+
+    .sec2 .appback .app .appT .apptitle>.blue {
+        font-size: 1.5rem;
+    }
+
+    .sec2 .appback .app .appT .appbtn {
+        padding: 20px 50px;
+        font-size: 1.1rem;
+    }
+
+    .sec3 .sec3_title {
+        font-size: 1.4rem;
+        font-family: suit_texbold;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .sec3 .sec3_title .s_menu {
+        font-size: 1.15rem;
+    }
+
+    .sec4 .sec4_title {
+        font-size: 1.4rem;
+    }
+
+    .sec4 .sec4_title p {
+        font-size: 1.2rem;
+        margin: 10% 0;
+    }
+
+    .sec4 .sec4_title .btitle {
+        padding: 5px 15px;
+        margin-right: 30px;
+    }
+
+    .sec4 .sec4_box .sec4_ititle,
+    .sec4 .sec4_box .sec4_ititle_youtube {
+        font-size: 1.2rem;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .sec4 .lists p {
+        line-height: 180%;
+    }
+
+    .sec5 h2 {
+        font-size: 1.4rem;
+        font-family: suit_texbold;
+    }
+
+    .sec5 .snslist p {
+        font-size: 0.8rem;
+    }
+
+    .sec6 h2 {
+        font-size: 1.4rem;
+        font-family: suit_texbold;
+    }
+
+    .sec6 .notice .n_text {
+        font-size: 0.85rem;
+    }
+
+    footer .f_inner {
+        padding: 7% 0;
+    }
+
+    footer .f_inner .f_main .f_logo {
+        width: 40%;
+    }
+
+    footer .f_inner .f_main .f_text p {
+        font-size: 0.9rem;
+        font-weight: 500;
+        line-height: 200%;
+        padding: 0;
+    }
+
+    footer .f_inner .f_list {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        font-size: 0.95rem;
+        margin: auto;
+    }
+
+    footer .f_inner .f_list>li {
+        width: 30%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    footer .f_inner .f_list li:not(:nth-child(1)) {
+        margin-left: 0;
+    }
+
+    footer .f_site {
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    .sec1 .sec1_map .sec1_mapT .sec1_ititle {
+        text-align: center;
+    }
+
+    .sec1 .sec1_map .sec1_mapT {
+        margin-top: 10%;
+    }
+
+    .sec1 .gumisi .tab {
+        font-size: 1.2rem;
+    }
+
+    .sec1 .gumisi .sec1_ibox {
+        width: 35%;
+        text-align: center;
+        line-height: 180%;
+    }
+
+    .sec1 .gumisi .sec1_ibox .colortitle {
+        padding: 20px 30px;
+    }
+
+    .sec2 .appback .app {
+        padding: 0;
+    }
+
+    .sec2 .appback .app .appT .apptitle {
+        font-size: 1.2em;
+    }
+
+    .sec2 .appback .app .appT .apptitle>.blue {
+        font-size: 1.2rem;
+    }
+
+    .sec2 .appback .app .appT .appbtn {
+        font-size: 1rem;
+    }
+
+    .sec3 .sec3_title .s_menu {
+        width: 100%;
+    }
+
+    .sec5 .snslist .snsicon {
+        justify-content: space-evenly;
+    }
+
+    .sec5 .snslist .snsicon figure {
+        width: 50px;
+    }
+
+    .sec6 .sec6_title {
+        display: none;
+    }
+
+    .sec6 .notice,
+    .sec6 .number,
+    .sec6 .sec6_search {
+        display: none;
+    }
+
+    .sec6 .hidden_noticess {
+        display: block;
+    }
+
+    footer .f_inner .f_main .f_text {
+        width: 50%;
+    }
+
+    footer .f_inner .f_main .f_text p {
+        line-height: 200%;
+        font-size: 0.85rem;
+    }
+
+    footer .f_inner .f_main .f_text p:nth-child(3) {
+        font-size: 0.7rem;
+    }
+
+    footer .f_inner .f_main .f_text p>br {
+        display: block;
+    }
+}
+
+@media screen and (max-width:575px) {
+    body {
+        font-size: 0.85rem;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    header .h_inner .logo {
+        width: 180px;
+    }
+
+    header .search {
+        display: none;
+    }
+
+    header .s_btn {
+        right: 100px;
+    }
+
+    header .search input {
+        display: none;
+    }
+
+    header .m_search_hidden {
+        display: block;
+    }
+
+    .sec1 .sec1_map .sec1_mapT .mainT {
+        font-size: 0.9rem;
+    }
+
+    .sec1 .gumisi .tab {
+        font-size: 0.9rem;
+        padding: 20px;
+    }
+
+    .sec1 .gumisi .sec1_ibox {
+        width: 100%;
+    }
+
+    .sec1 .gumisi .sec1_ibox .textbox .colortitle {
+        margin: 5% auto;
+        background: none;
+        color: #000;
+    }
+
+    .sec2 .qmenu {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .sec2 .qmenu .sec2_title {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 7%;
+    }
+
+    .sec2 .appback .app .appT .apptitle {
+        display: none;
+    }
+
+    .sec2 .appback .app .appT .appbtn {
+        font-size: 0.97rem;
+        padding: 30px;
+    }
+
+    .sec3 .sec3_title .s_menu {
+        font-size: 1rem;
+
+    }
+
+    .sec4 .sec4_title {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sec4 .youlist figure {
+        margin: auto;
+    }
+
+    .sec4 .youlist p {
+        font-size: 1rem;
+    }
+
+    .sec4 .lists p {
+        display: none
+    }
+
+    .sec4 .sec4_box .hidden_span {
+        display: block;
+    }
+
+    footer .f_inner .f_main {
+        flex-direction: column;
+    }
+
+    footer .f_inner .f_main .f_logo {
+        width: 65%;
+    }
+
+    footer .f_inner .f_main .f_text {
+        width: 100%;
+        text-align: center;
+        margin: 7% 0;
+    }
+
+    footer .f_inner .f_main .f_text p {
+        font-size: 0.8rem;
+    }
+
+    footer .f_inner .f_main .f_text p>br {
+        display: none;
+    }
+
+    footer .f_inner .f_list>li {
+        width: 45%;
+        margin-bottom: 15px;
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    body {
+        font-size: 0.8rem;
+    }
+
+    .sec1 .gumisi .tab {
+        font-size: 0.8rem;
+    }
+}
