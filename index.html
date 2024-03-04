@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gumisi</title>
+    <link rel="shortcut icon" href="./img/favicon-16x16.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="./css/slick.css" type="text/css">
+    <link rel="stylesheet" href="./css/slick-theme.css" type="text/css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <script src="./script/jquery-3.7.1.min.js"></script>
+    <script src="./script/bootstrap.min.js"></script>
+    <script src="./script/slick.js"></script>
+    <script src="./script/app.js" defer></script>
+
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+
+
+        <div class="h_inner">
+            <h1 class="logo">
+                <a href="#">
+                    <img src="./img/header/logo.png" alt="logo">
+                    <span class="t_hidden">google</span>
+                </a>
+            </h1>
+
+            <ul class="h_menu">
+                <li>
+                    <a href="#">구미소개</a>
+                    <ul class="h_dmenu">
+
+                        <li>
+                            <a href="#">구미시는?</a>
+                        </li>
+                        <li>
+                            <a href="#">행정구역 지도</a>
+                        </li>
+                        <li>
+                            <a href="#">상징</a>
+                        </li>
+                        <li>
+                            <a href="#">시정 홍보</a>
+                        </li>
+                        <li>
+                            <a href="#">고향사랑 기부제</a>
+                        </li>
+                        <li>
+                            <a href="#">인문도시 구미</a>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li><a href="#">분야별 정보</a>
+
+                    <ul class="h_dmenu">
+                        <li>
+                            <a href="#">복지</a>
+                        </li>
+                        <li>
+                            <a href="#">환경</a>
+                        </li>
+                        <li>
+                            <a href="#">건강</a>
+                        </li>
+                        <li>
+                            <a href="#">일자리 경제</a>
+                        </li>
+                        <li>
+                            <a href="#">도로 교통</a>
+                        </li>
+                        <li>
+                            <a href="#">재난 안전</a>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li><a href="#">구미는 지금</a>
+
+                    <ul class="h_dmenu">
+                        <li><a href="#">보도자료</a></li>
+                        <li><a href="#">문화행사</a></li>
+                        <li><a href="#">관광 정보</a></li>
+                        <li><a href="#">냠냠 맛집지도</a></li>
+                        <li><a href="#">홍보 영상</a></li>
+                        <li><a href="#">구미 소식지</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="#">#구미</a>
+
+                    <ul class="h_dmenu">
+                        <li>
+                            <a href="#">SNS 소통</a>
+                        </li>
+                        <li>
+                            <a href="#">구미에게 바랍니다</a>
+                        </li>
+                        <li>
+                            <a href="#">칭찬합시다</a>
+                        </li>
+                        <li>
+                            <a href="#">설문조사 참여</a>
+                        </li>
+                        <li>
+                            <a href="#">찾아오시는 길</a>
+                        </li>
+                        <li>
+                            <a href="#">문의사항</a>
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+
+        </div>
+
+        <form class="search hidden">
+            <input type="text" name="search">
+        </form>
+        <a href="#" class="s_btn">
+            <figure>
+                <img src="./img/header/header_ask.svg" alt="ask">
+            </figure>
+        </a>
+        <button type="button" class="ham hidden">
+            <img src="./img/header/hambar2.svg" alt="list">
+        </button>
+
+    </header>
+    <!-- mobile hidden 575~400px ver -->
+
+    <div class="m_submenu_hidden">
+        <div class="sub_mtop">
+            <div class="sub_logo">
+                <a href="#">
+                    <img src="./img/mobile/submenu_logo.png" alt="slogo">
+                </a>
+            </div>
+
+            <div class="right_icons">
+
+                <a href="#" class="ms_btn">
+                    <figure>
+                        <img src="./img/header/header_ask.svg" alt="ask">
+                    </figure>
+                </a>
+
+                <button type="button" class="exex">
+                    <img src="./img/mobile/x.png" alt="exex">
+                </button>
+            </div>
+        </div>
+
+        <ul class="big_menu">
+            <li>
+                <a href="#">구미 소개
+                    <button type="button" class="pluss">
+                        <img src="./img/mobile/plus.svg" alt="plus">
+                    </button></a>
+            </li>
+            <li><a href="#">분야별 정보
+                    <button type="button" class="pluss">
+                        <img src="./img/mobile/plus.svg" alt="plus">
+                    </button>
+                </a></li>
+            <li><a href="#">구미는 지금 <button type="button" class="pluss">
+                        <img src="./img/mobile/plus.svg" alt="plus">
+                    </button></a></li>
+            <li><a href="#">냠냠 맛집 지도
+                    <button type="button" class="pluss">
+                        <img src="./img/mobile/plus.svg" alt="plus">
+                    </button>
+                </a></li>
+            <li><a href="#">#구미
+                    <button type="button" class="pluss">
+                        <img src="./img/mobile/plus.svg" alt="plus">
+                    </button>
+                </a>
+            </li>
+        </ul>
+
+        <!-- ms_btn 클릭했을 때 나오는 화면 흰 배경 꽉 차게 서치창만 나오게하기  -->
+        <div class="mb_search_hidden">
+            <button type="button" class="ms_exex">
+                <img src="./img/mobile/x.png" alt="exex">
+
+            </button>
+            <div class="ms_popup">
+                <input type="text" placeholder="검색어를 입력해주세요.">
+                <a href="#">
+                    <img src="./img/mobile/search_point.svg" alt="point">
+                </a>
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <!-- //mobile hidden 575~400px ver -->
+    <!-- //header -->
+
+
+    <!-- banner -->
+    <div class="banner">
+        <div class="vbox">
+            <video src="./video/gumi_video.mp4" loop muted autoplay></video>
+        </div>
+    </div>
+    <!-- //banner -->
+
+    <!-- main -->
+    <main>
+        <!-- section1 -->
+        <section class="sec1">
+
+            <!-- map -->
+            <div class="sec1_map">
+                <div class="container">
+                    <div class="row 
+                justify-content-center align-items-center">
+                        <div class="col-12 col-lg-7">
+                            <figure>
+                                <img src="./img/section1/sec1_map.jpg" alt="map">
+                            </figure>
+                        </div>
+                        <div class="col-12 col-lg-5">
+                            <div class="sec1_mapT">
+
+                                <div class="sec1_ititle">
+                                    <h2>
+                                        새로운 미래를 여는 <br>
+                                        <span class="blue">새희망 도시</span>
+                                        <br>
+                                    </h2>
+
+                                    <p>
+                                        경북 서부 중심 도시, <span class="blue">구미시</span>
+                                    </p>
+                                </div>
+
+                                <div class="mainT">
+                                    구미시는 혁신적인 산업과 다채로운 문화가 아름다운 조화를 이루는 곳입니다. 풍부한 자연경관이 공존하고, 끊임없이 발전하며 미래를 여는 도시입니다.
+                                    새로운 도전과 희망이 넘치는 곳, 구미에서 시작하는 모든 것이 미래를 열어갑니다.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //map -->
+
+            <!-- gumimark -->
+            <div class="container">
+                <div class="gumisi">
+                    <div class="tab">
+                        <p>상징과 마스코트</p>
+                    </div>
+
+
+                    <div class="sec1_ibox">
+                        <div class="imgbox">
+                            <figure>
+                                <img src="./img/section1/sec1_flower.png" alt="flower">
+                            </figure>
+
+                        </div>
+
+                        <div class="textbox">
+                            <h3 class="colortitle ">개나리</h3>
+
+                            <p>
+                                봄에 제일 먼저 피는 꽃으로 첨단 전자 산업을 선도하는 구미의 무한한 힘을 표현합니다.
+                            </p>
+
+                            <p class="hidden_p">
+                                봄에 제일 먼저 피는 꽃으로, 첨단 전자 산업을 선도하는 구미의 무한한 힘을 표현함.
+                            </p>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="sec1_ibox tree">
+
+                        <div class="textbox">
+                            <h3 class="colortitle tree">느티나무</h3>
+
+                            <p>
+                                아무데서나 잘 자라는 장수목으로 구미 시민의 진취적인 기상과도 같습니다.
+                            </p>
+
+                            <p class="hidden_p">
+                                아무데서나 잘 자라는 장수목으로, 번식력이 강하며 구미 시민의 진취적인 기상과 같음.
+                            </p>
+                        </div>
+
+                        <div class="imgbox">
+                            <figure>
+                                <img src="./img/section1/sec1_tree.png" alt="tree">
+                            </figure>
+
+                        </div>
+                    </div>
+
+                    <div class="sec1_ibox">
+                        <div class="imgbox">
+                            <figure>
+                                <img src="./img/section1/sec1_bird.png" alt="bird">
+                            </figure>
+                        </div>
+
+
+                        <div class="textbox">
+                            <h3 class="colortitle bird">까치</h3>
+
+                            <p>
+                                기쁜 소식을 전해주는 길조로 인식되어 있는 까치는 새로운 발전과 화합을 기약합니다.
+                            </p>
+
+                            <p class="hidden_p">
+                                기쁜 소식을 전해주는 길조로,구미시의 새로운 발전과 화합을 기약함.
+                            </p>
+
+                        </div>
+                    </div>
+
+
+                    <div class="sec1_ibox tomibox">
+
+                        <div class="textbox">
+                            <h3 class="colortitle tomi">토미</h3>
+
+                            <p class="tomit">
+                                거북이를 상징하는 Tortoise와 새천년, 황금시대의 Millennium 지성, 감성, 첨단 정보기술의 <br>Intelligence의 합성어입니다.
+                                또한, 거북이의 총명함은 구미시민의 진취적인 시민의식을 <br>대변하여 첨단 기술과 인간이 조화로운 도시임을 상징합니다.
+                            </p>
+
+                            <p class="hidden_p">
+                                거북이를 상징하는 Tortoise와 새천년, 황금시대의 Millennium, 첨단정보기술의 Intelligence의 합성어
+                            </p>
+
+                        </div>
+
+                        <div class="imgbox">
+                            <figure>
+                                <img src="./img/section1/tomi250px.jpg" alt="tomi">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //gumimark -->
+
+
+        </section>
+        <!-- //section1 -->
+
+
+        <!-- section2 -->
+        <section class="sec2">
+
+            <div class="container">
+
+                <div class="qmenu">
+
+                    <h3 class="sec2_title">
+                        분야별 정보
+                    </h3>
+
+                    <div class="sec2_box">
+
+                        <div class="sec2_ibox">
+                            <div class="icon">
+                                <figure>
+                                    <img src="./img/section2/sec2_heart.svg" alt="heart">
+                                </figure>
+                                <span>복지</span>
+                            </div>
+
+                            <ul class="h_drop">
+                                <li>
+                                    <a href="#">복지 알아보기</a>
+
+                                    <ul class="movemenu">
+                                        <li><a href="#">#맞춤형 검색</a></li>
+                                        <li><a href="#">#복지정보</a></li>
+                                        <li><a href="#">#생애주기별 복지</a></li>
+                                        <li><a href="#">#대상별 복지</a></li>
+                                        <li><a href="#">#공지사항</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+
+                        </div>
+
+
+
+                        <div class="sec2_ibox">
+                            <div class="icon">
+                                <figure>
+                                    <img src="./img/section2/sec2_eco.svg" alt="eco">
+                                </figure>
+                                <span>환경</span>
+                            </div>
+
+                            <ul class="h_drop">
+                                <li>
+                                    <a href="#">환경 알아보기</a>
+
+                                    <ul class="movemenu">
+                                        <li><a href="#">#공원 산임욕장</a></li>
+                                        <li><a href="#">#구미시 체육시설</a></li>
+                                        <li><a href="#">#쓰레기 배출방법</a></li>
+                                        <li><a href="#">#공공요금 모아보기</a></li>
+                                        <li><a href="#">#탄소포인트제</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="sec2_ibox">
+                            <div class="icon">
+                                <figure>
+                                    <img src="./img/section2/sec2_heal.svg" alt="heal">
+                                </figure>
+                                <span>건강</span>
+
+
+                                <ul class="h_drop">
+                                    <li>
+                                        <a href="#">건강 알아보기</a>
+
+                                        <ul class="movemenu">
+                                            <li><a href="#">#건강소식</a></li>
+                                            <li><a href="#">#건강생활 정보</a></li>
+                                            <li><a href="#">#의료기관 안내</a></li>
+                                            <li><a href="#">#의약품 정보방</a></li>
+                                            <li><a href="#">#감염병 정보</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="sec2_ibox">
+
+                            <div class="icon">
+                                <figure>
+                                    <img src="./img/section2/sec2_moeny.svg" alt="moeny">
+                                </figure>
+                                <span>일자리 경제</span>
+                            </div>
+
+                            <ul class="h_drop">
+                                <li>
+                                    <a href="#">경제 알아보기</a>
+
+                                    <ul class="movemenu">
+                                        <li><a href="#">#취업정보</a></li>
+                                        <li><a href="#">#구인구직</a></li>
+                                        <li><a href="#">#청년창업지원산업</a></li>
+                                        <li><a href="#">#구미 산업 경제</a></li>
+                                        <li><a href="#">#소상공인 정보</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="sec2_ibox">
+
+                            <div class="icon">
+                                <figure>
+                                    <img src="./img/section2/sec2_car.svg" alt="car">
+                                </figure>
+                                <span>도로 교통</span>
+                            </div>
+
+                            <ul class="h_drop">
+                                <li>
+                                    <a href="#">교통 알아보기</a>
+
+                                    <ul class="movemenu">
+                                        <li><a href="#">#시내버스</a></li>
+                                        <li><a href="#">#주차시설</a></li>
+                                        <li><a href="#">#불법단속</a></li>
+                                        <li><a href="#">#과태료 조회</a></li>
+                                        <li><a href="#">#Green Bike</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="sec2_ibox">
+                            <div class="icon">
+                                <figure>
+                                    <img src="./img/section2/sec2_exit.svg" alt="exit">
+                                </figure>
+                                <span>재난 안전</span>
+                            </div>
+
+                            <ul class="h_drop">
+                                <li>
+                                    <a href="#">안전 알아보기</a>
+
+                                    <ul class="movemenu">
+                                        <li><a href="#">#비상행동요령</a></li>
+                                        <li><a href="#">#비상대피시설</a></li>
+                                        <li><a href="#">#자동심장충격기 현황</a></li>
+                                        <li><a href="#">#시민안전보험</a></li>
+                                        <li><a href="#">#통합관제센터</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+
+            <!-- qickmenu -->
+            <!-- salpimiapp -->
+            <div class="appback">
+                <div class="container">
+                    <div class="app">
+                        <figure>
+                            <img src="./img/section2/sec2-2_banner.png" alt="app">
+                        </figure>
+
+
+                        <div class="appT">
+                            <h2 class="apptitle">
+                                집에 홀로 계신 가족이 걱정되세요? <br>
+                                이제 <span class="blue">살피미</span> 가 보살펴 드릴게요!
+                            </h2>
+
+                            <button type="button" class="appbtn">
+                                살피미 앱을 더 알고 싶다면 <br class="apphidden"><span class="blue">Click</span> 해주세요!
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- //salpimiapp -->
+
+
+        </section>
+        <!-- //section3 -->
+        <section class="sec3">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-4 col-10">
+                        <h2 class="sec3_title">
+                            구미는 지금
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-10">
+                        <ul class="s_menu">
+                            <li><a href="#">새로운 소식</a></li>
+                            <li><a href="#">보도 자료</a></li>
+                            <li><a href="#">행사 & 이벤트</a></li>
+                            <li><a href="#">관광지</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner sldie">
+                        <div class="carousel-item active s-box">
+                            <div class="row justify-content-center">
+                                <div class="col-12 imgbox">
+                                    <img src="./img/section3/s1.jpg" class="d-block w-100" alt="book">
+                                </div>
+                                <div class="col-12 stext">
+                                    <h3>구미시, 올해 달라지는 제도와 법규 정리…책자 발간 </h3>
+                                    <p>
+                                        - 구미시의 주요 제도와 함께 37개 정부기관의 345건 법‧제도 수록 -
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item s-box">
+                            <div class="row justify-content-center">
+                                <div class="col-12 imgbox">
+                                    <img src="./img/section3/s2.jpg" class="d-block w-100" alt="poster">
+                                </div>
+                                <div class="col-12 stext">
+                                    <h3>2025 구미 아시아육상경기선수권대회 상징물 공모</h3>
+                                    <p>
+                                        - 톡톡 튀는 아이디어로 3월 29일까지 국민 누구나 가능 -
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item s-box">
+                            <div class="row justify-content-center">
+                                <div class="col-12 imgbox">
+                                    <img src="./img/section3/s3.png" class="d-block w-100" alt="job">
+                                </div>
+                                <div class="col-12 stext">
+                                    <h3>구미 명소 #금오산 #영남대표명산 #힐링등산</h3>
+                                    <p>
+                                        “힐링 등산하러 금오산으로 떠나요”
+                                        구미에서 가보고 싶은 곳, 1위
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item s-box">
+                            <div class="row justify-content-center">
+
+                                <div class="col-12 imgbox">
+                                    <img src="./img/section3/s4.jpg" class="d-block w-100" alt="con">
+                                </div>
+                                <div class="col-12 stext">
+                                    <h3>황치열과 함께하는 새봄맞이 신춘콘서트 개최</h3>
+                                    <p>
+                                        - 3월 30일(토) 문화예술회관, '황치열 THE SPECIAL' 콘서트 열려 -
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions"
+                        data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions"
+                        data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- section4 -->
+        <section class="sec4">
+
+            <!-- <div class="mh_slide">
+                        <div class="slideI">
+                            <a href="#">
+                                <img src="./img/section4/y1.jpg" alt="y1">
+                            </a>
+                        </div>
+                        <div class="slideI">
+                            <a href="#">
+                                <img src="./img/section4/y2.jpg" alt="y2">
+                            </a>
+                        </div>
+                        <div class="slideI">
+                            <a href="#">
+                                <img src="./img/section4/y3.jpg" alt="y3">
+                            </a>
+                        </div>
+                    </div> -->
+
+            <div class="sec4_title">
+                <div class="btitle">
+                    <figure>
+                        <img src="./img/section4/sec4_titlerice.svg" alt="rice">
+                    </figure>
+                    <h3>
+                        <span>냠냠</span> 맛집 지도
+                    </h3>
+                </div>
+                <p>
+                    찐 <span class=blue>구미</span>사람이 가는 로컬 맛집 TOP 10
+                </p>
+            </div>
+
+
+
+            <div class="sec4_box">
+
+                <div class="sec4_ititle_youtube">
+                    <figure>
+                        <img src="./img/section4/sec4_youtube.svg" alt="youtube">
+                    </figure>
+                    <h4>유투브 PICK! BEST 맛집</h4>
+                </div>
+
+                <!-- 모바일 sec4 슬라이드 991px -->
+                <div class="mh_slide">
+                    <div class="slideI">
+                        <a href="#">
+                            <img src="./img/section4/y1.jpg" alt="y1">
+                        </a>
+                    </div>
+                    <div class="slideI">
+                        <a href="#">
+                            <img src="./img/section4/y2.jpg" alt="y2">
+                        </a>
+                    </div>
+                    <div class="slideI">
+                        <a href="#">
+                            <img src="./img/section4/y3.jpg" alt="y3">
+                        </a>
+                    </div>
+                </div>
+                <!-- //모바일 sec4 슬라이드 991px -->
+
+
+                <div class="container">
+
+                    <div class="row justify-content-center">
+
+                        <div class="col-md-4 d-none d-lg-block">
+                            <div class="youlist">
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/section4/y1.jpg" alt="y1">
+                                    </figure>
+                                </a>
+
+                                <p>
+                                    #도산식육식당 #백쌤 PICK <br>
+                                    #돼지찌개 #밥도둑짜글이 #비벼먹고볶아먹고
+                                </p>
+
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 d-none d-lg-block">
+                            <div class="youlist">
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/section4/y2.jpg" alt="y2">
+                                    </figure>
+                                </a>
+                                <p>
+                                    #바로그집 #돌곱창 #백쌤PICK <br>
+                                    #곱창이5천원! #볶음밥은 사랑이죠
+                                </p>
+
+                                <span class="hidden_span"> #바로 그집 돌곱창</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 d-none d-lg-block">
+                            <div class="youlist">
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/section4/y3.jpg" alt="y3">
+                                    </figure>
+                                </a>
+                                <p>
+                                    #김태주선산곱창 #돼지곱창전골 #구미의자랑<br>
+                                    #피식대학 #메이드인경상도 #이용주 PICK
+                                </p>
+                                <span class="hidden_span"> #김태주선산곱창</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sec4_ititle">
+                        <figure>
+                            <img src="./img/section4/sec4_ititle_mz.svg" alt="youtube">
+                        </figure>
+                        <h4>100% 취향 저격 맛집</h4>
+                    </div>
+                    <div class="row justify-content-center">
+
+                        <div class="col-lg-3 col-6">
+                            <div class="lists">
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/section4/m1.jpg" alt="m1">
+                                    </figure>
+                                </a>
+                                <p>
+                                    #떡사모 #추억의즉석떡볶이<br>
+                                    #사장님의불맛 #하트볶음밥
+                                </p>
+                                <span class="hidden_span"> #떡사모</span>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-3 col-6">
+                            <div class="lists">
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/section4/m2.jpg" alt="m2">
+                                    </figure>
+                                </a>
+                                <p>
+                                    #교촌치킨 #치킨의본고장<br>
+                                    #치킨은교촌 #허니콤보 #오늘저녁치킨
+                                </p>
+                                <span class="hidden_span"> #교촌치킨1호점</span>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-6">
+                            <div class="lists">
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/section4/m3.jpg" alt="m3">
+                                    </figure>
+                                </a>
+                                <p>
+                                    #낭만쭈꾸미 #쭈꾸미연구소<br>
+                                    #밥,커피,야경까지한번에! #뷰맛집
+                                </p>
+                                <span class="hidden_span"> #낭만쭈꾸미</span>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-6">
+                            <div class="lists">
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/section4/m4.jpg" alt="m4">
+                                    </figure>
+                                </a>
+                                <p>
+                                    #싱글벙글복어 #어르신입맛저격<br>
+                                    #최고의보양식 #복매운탕 #복지리
+                                </p>
+                                <span class="hidden_span"> #싱글벙글복어</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="sec4_ititle">
+                            <figure>
+                                <img src="./img/section4/sec4_ititle_sijang.svg" alt="youtube">
+                            </figure>
+                            <h4>재래시장의 재발견 ‘새마을중앙시장’ 속 맛집</h4>
+                        </div>
+
+                        <div class="col-lg-3 col-6">
+                            <div class="lists">
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/section4/s1.jpg" alt="s1">
+                                    </figure>
+                                </a>
+                                <p>
+                                    #할매떡볶이 #서서먹는떡볶이<br>
+                                    #그래서맛도두배 #납작만두추가필수
+                                </p>
+                                <span class="hidden_span"> #할매떡볶이</span>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-6">
+                            <div class="lists">
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/section4/s2.jpg" alt="s2">
+                                    </figure>
+                                </a>
+                                <p>
+                                    #덕촌김밥 #건강흑미김밥<br>
+                                    #기차타기전에한줄뚝딱 #새콤비빔만두
+                                </p>
+                                <span class="hidden_span"> #덕촌김밥</span>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-6">
+                            <div class="lists">
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/section4/s3.jpg" alt="s3">
+                                    </figure>
+                                </a>
+                                <p>
+                                    #다모아족발 #무침족발<br>
+                                    #족발골목 #소문난족발맛집
+                                </p>
+                                <span class="hidden_span"> #다모아족발</span>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-6">
+                            <div class="lists">
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/section4/s4.jpg" alt="s4">
+                                    </figure>
+                                </a>
+                                <p>
+                                    #진주국수 #국수골목 #잔치국수<br>
+                                    #비빔국수 #시골감성한상차림
+                                </p>
+                                <span class="hidden_span"> #진주국수</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </section>
+        <!-- //section4 -->
+
+        <!-- section5 -->
+        <section class="sec5">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-8 col-md-9 col-sm-12">
+                        <h2 class="sec5_title">
+                            <span class="blue"></span>구미에게 바랍니다
+                        </h2>
+
+                        <div class="notice">
+                            <ul class="n_title">
+                                <li>제목</li>
+                                <li>이름</li>
+                                <li>날짜</li>
+                            </ul>
+
+                            <ul class="n_text">
+                                <li>
+                                    <a href="#">일자리 고용센터 주차장이 협소해요.</a>
+                                </li>
+                                <li> 조**</li>
+                                <li>2024.02.17</li>
+                            </ul>
+
+                            <ul class="n_text">
+                                <li>
+                                    <a href="#">구미시를 대표하는 행사가 생겼으면 좋겠습니다</a>
+                                </li>
+                                <li> 조**</li>
+                                <li>2024.02.15</li>
+                            </ul>
+
+                            <ul class="n_text">
+                                <li>
+                                    <a href="#">도로 상태가 좋지 않은 곳이 너무 많아요!</a>
+                                </li>
+                                <li> 길**</li>
+                                <li>2024.02.12</li>
+                            </ul>
+
+                            <ul class="n_text">
+                                <li>
+                                    <a href="#">복지사업에 대해 잘 알고 싶어요. 알려주세요.</a>
+                                </li>
+                                <li> 복**</li>
+                                <li>2024.02.11</li>
+                            </ul>
+
+                            <ul class="n_text">
+                                <li>
+                                    <a href="#">산책로에 가로등 설치해주세요. 밤에 무서워요.</a>
+                                </li>
+                                <li> 오**</li>
+                                <li>2024.02.09</li>
+                            </ul>
+
+                            <ul class="n_text">
+                                <li>
+                                    <a href="#">시민들에게 주는 혜택이 더 많아졌으면 해요!</a>
+                                </li>
+                                <li> 노**</li>
+                                <li>2024.02.07</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="mobilehidden">
+                        <a href="#"><button type="button" class="plusbtn">
+                                더보기 <img src="./img/mobile/plusbutton.svg" alt="plus">
+                            </button>
+                        </a>
+                    </div>
+
+                    <div class="col-3 col-md-2">
+                        <div class="sec5-2">
+                            <h2># 구미와 소통해요</h2>
+
+                            <ul class="snslist">
+
+                                <li class="instagram">
+                                    <a href="https://www.instagram.com" target="_blank"></a>
+                                </li>
+
+                                <li class="youtube">
+                                    <a href="https://www.youtube.com" target="_blank"></a>
+                                </li>
+                                <li class="facebook">
+                                    <a href="https://www.facebook.com" target="_blank"></a>
+                                </li>
+                                <li class="naver">
+                                    <a href="https://www.naver.com" target="_blank"></a>
+                                </li>
+
+                                <p>클릭하시면 <br>
+                                    해당 사이트로 자동 연결됩니다.</p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- //section5 -->
+
+
+        <!-- top btn -->
+        <button type="button" class="topbtn">
+            <a href="#">
+                <img src="./img/footer/topbtnblue.svg" alt="topbtn">
+            </a>
+        </button>
+        <!-- // top btn -->
+
+
+        <!-- footer -->
+
+        <footer>
+
+            <div class="container">
+
+                <div class="m_sns">
+                    <ul>
+
+
+                        <li class="instagram">
+                            <a href="https://www.instagram.com" target="_blank"></a>
+                        </li>
+
+                        <li class="youtube">
+                            <a href="https://www.youtube.com" target="_blank"></a>
+                        </li>
+
+                        <li class="facebook">
+                            <a href="https://www.facebook.com" target="_blank"></a>
+                        </li>
+
+                        <li class="naver">
+                            <a href="https://www.naver.com" target="_blank"></a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+
+                <div class="f_inner">
+
+                    <div class="f_main">
+
+                        <div class="f_logo">
+                            <figure>
+                                <img src="./img/header/logo.png" alt="f_logo">
+                            </figure>
+                        </div>
+
+                        <div class="f_text">
+                            <p>
+                                39281 경북 구미시 송정대로 55(송정동)</p>
+                            <p>TELL: 054-480-6114
+                                FAX: 054-452-5529
+                            </p>
+                            <p>
+                                COPYRIGHTⓒ2024.by 구미시 ALL RIGHTS RESERVED.
+                            </p>
+                        </div>
+                    </div>
+
+                    <ul class="f_list">
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">주요 기능 소개</a></li>
+                        <li><a href="#">홈페이지 개선 건의</a></li>
+                        <li><a href="#">저작권 정책</a></li>
+                        <li><a href="#">뷰어 다운로드</a></li>
+                        <li><a href="#">오시는 길</a></li>
+                    </ul>
+
+                    <div class="f_site">
+                        <ul class="sitemap">
+                            <li><a href="#">직속기관 및 사업소</a></li>
+                            <li><a href="#">읍·면·동</a></li>
+                            <li><a href="#">부속 사이트</a></li>
+                            <li><a href="#">관내 유관 사이트</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </footer>
+
+        <!-- //footer -->
+
+    </main>
+    <!-- /main -->
+
+</body>
+
+</html>
